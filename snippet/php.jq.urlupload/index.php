@@ -1,5 +1,5 @@
 <?
-include_once('../../class/class.image.resize.php');
+include_once('class.image.resize.php');
 function getimg($url,$name,$path) {         
     $headers[] = 'Accept: image/gif, image/x-bitmap, image/jpeg, image/pjpeg';              
     $headers[] = 'Connection: Keep-Alive';         
@@ -66,4 +66,3 @@ if (isset($_POST['url']) && $_POST['url']!='' && $_POST['path']!='') {
 //header("Location: post.php");
 
 ?>
-

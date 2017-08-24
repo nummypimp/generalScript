@@ -170,13 +170,10 @@ EOD;
 	}
 header('Content-type: application/json');
 ?>
-{
-		"items": [
-			<?php echo $items;?>
-        ]
-}
+	{ "items": [
+	<?php echo $items;?> ] }
 
-<?php
+	<?php
 			exit(0);
 
 	
@@ -272,13 +269,10 @@ EOD;
 	}
 header('Content-type: application/json');
 ?>
-{
-		"items": [
-			<?php echo $items;?>
-        ]
-}
+		{ "items": [
+		<?php echo $items;?> ] }
 
-<?php
+		<?php
  
 			exit(0);
 }
@@ -309,14 +303,11 @@ function startChatSession() {
 
 header('Content-type: application/json');
 ?>
-{
-		"username": "<?php echo $_SESSION['username'];?>",
-		"items": [
-			<?php echo $items;?>
-        ]
-}
+			{ "username": "
+			<?php echo $_SESSION['username'];?>", "items": [
+			<?php echo $items;?> ] }
 
-<?php
+			<?php
 
 
 	exit(0);
